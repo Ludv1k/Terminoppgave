@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+     <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
-    <h1>Home base</h1>
-    <h3>here's the link to this and the other site:</h3>
-    <a href="/download">download</a>
-    <a href="/">Home</a>
+    <div class="topnav">
+        <div class="navcontent">
+            <h1>Game Page</h1>
+            <div class="navbtn">
+                <button onclick="location.href='/'"><h3>Home</h3></button>
+                <button onclick="location.href='/download'"><h3>Download</h3></button>
+            </div>
+        </div>
+    </div>
     {% block body %}
     {% endblock %}
 </body>
