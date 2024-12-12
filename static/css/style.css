@@ -73,3 +73,20 @@ body {
     background-color: #F4D06F;
     cursor: pointer;
 }
+
+.homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.homepgtxt {
+    display: flex;
+    flex-direction: column;
+}
+
+.edgarimg {
+    height: 65vh;
+    width: auto;
+}
